@@ -120,3 +120,9 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+
+/* after added css */
+#firstclass-decrease:hover,
+#firstclass-increase:hover {
+ cursor: pointer;
+}
