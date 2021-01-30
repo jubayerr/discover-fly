@@ -122,7 +122,7 @@ nav ul li a:hover, a.active{
 }
 
 /* after added css */
-#firstclass-decrease:hover,
-#firstclass-increase:hover {
+.firstclass-decrease:hover,
+.firstclass-increase:hover {
  cursor: pointer;
 }
