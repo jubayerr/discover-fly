@@ -28,7 +28,7 @@
 
     <!--Booking Section-->
     <main class="main-content container">
-        <div class="booking-form">
+        <div id="booking-form" class="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
                 <label for="">Flying From</label>
@@ -98,19 +98,30 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="submit-btn" class="btn-style">Book Now</button>
         </div>
-
+        <!-- Extra Section -->
+        <div id="popup-area">
+            <div class="row">
+                <div class="col">
+                    <div class="popup-main">
+                        <h1>Thank You!</h1>
+                        <P>Hope You'll Enjoy This Journey!</P>
+                        <p><b>Tracking order</b> : <span id="order-number" style="color:#6f00ff;">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Booking Content -->
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
                 veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
                 voluptatibus quam</p>
         </div>
-        </section>
-
-        <!--Thank You-->
-        <script src="script.js"></script>
+    </main>
+    <!--Thank You-->
+    <script src="script.js"></script>
 </body>
 
 </html>

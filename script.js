@@ -1,6 +1,8 @@
+// Ticket Price Count
 function getTicketValue(ticket, isIncrease) {
     const ticketInput = document.getElementById(ticket + '-input');
     const ticketNumber = parseInt(ticketInput.value);
+
     let ticketNewCount = 0;
     if (isIncrease == true) {
         ticketNewCount = ticketNumber + 1;
@@ -9,6 +11,7 @@ function getTicketValue(ticket, isIncrease) {
         ticketNewCount = ticketNumber - 1;
     }
     ticketInput.value = ticketNewCount;
+
     let ticketPriceTotal = 0;
     if (ticket == 'firstclass') {
         ticketPriceTotal = ticketNewCount * 150;
@@ -18,9 +21,10 @@ function getTicketValue(ticket, isIncrease) {
     }
 
     document.getElementById(ticket + '-price').innerText = "$" + ticketPriceTotal;
+
     calculateTotal();
 }
-
+// Calulate Total Ticket Price
 function calculateTotal() {
     const firstclassPrice = getInputValue('firstclass');
     const economyPrice = getInputValue('economy');
@@ -30,12 +34,22 @@ function calculateTotal() {
 
     const tax = Math.round(subTotal * 0.1);
     document.getElementById('tax').innerText = tax;
+
     const totalTicketPrice = subTotal + tax;
     document.getElementById('total-ticket-price').innerText = "$" + totalTicketPrice;
 }
-
+// Get Input Value of Ticket
 function getInputValue(ticket) {
     const ticketInput = document.getElementById(ticket + '-input');
     const ticketPrice = parseInt(ticketInput.value);
     return ticketPrice;
 }
+// Extra Section Pop Up Element
+document.getElementById('submit-btn').addEventListener('click', function () {
+    const mainSection = document.getElementById('booking-form');
+    mainSection.style.display = "none";
+    const popupArea = document.getElementById('popup-area');
+    popupArea.style.display = "block";
+    document.getElementById('order-number').innerText = "#" + parseInt(Math.random() * 1000000000);
+})
+
