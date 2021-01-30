@@ -37,6 +37,7 @@ function calculateTotal() {
 
     const totalTicketPrice = subTotal + tax;
     document.getElementById('total-ticket-price').innerText = "$" + totalTicketPrice;
+    document.getElementById('popup-total').innerText = "$" + totalTicketPrice;
 }
 // Get Input Value of Ticket
 function getInputValue(ticket) {
@@ -48,6 +49,8 @@ function getInputValue(ticket) {
 document.getElementById('submit-btn').addEventListener('click', function () {
     const mainSection = document.getElementById('booking-form');
     mainSection.style.display = "none";
+    const bookingContent = document.getElementById('booking-content')
+    bookingContent.style.display = "none";
     const popupArea = document.getElementById('popup-area');
     popupArea.style.display = "block";
     document.getElementById('order-number').innerText = "#" + parseInt(Math.random() * 1000000000);

@@ -121,29 +121,28 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
-/* Extra Section */
 
+/* Extra Section */
+#booking-content {
+    display: block;
+}
 #booking-form {
     display: block;
 }
-
 #popup-area {
     display: none;
     margin: 100px 0;
 }
-#popup-area h1 , p {
+#popup-area h1 , h4, p {
     padding: 10px 0;
 }
 .popup-main {
     text-align: center;
     padding:  100px 20px;
-    background-color: #F3F5FF;
+    background-color: #f3f5ff;
     border-radius: 10px;
     box-shadow: 4px 4px 40px #111;
 }
-
-
-
 /* custom added css */
 .economy-increase:hover,
 .economy-decrease:hover,
