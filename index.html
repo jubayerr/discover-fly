@@ -51,7 +51,7 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class (<span id="firstclass-price">$00</span>)</label>
-                    <input id="firstclass-input" class="inp-style inp-width" value="0">
+                    <input id="firstclass-input" class="inp-style inp-width" value="2">
                 </div>
                 <div class="plus-minus-btn">
                     <p> <span onclick="getTicketValue('firstclass', true)" class="firstclass-increase">+</span> <span
@@ -62,7 +62,7 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy (<span id="economy-price">$00</span>)</label>
-                    <input id="economy-input" class="inp-style inp-width" value="0">
+                    <input id="economy-input" class="inp-style inp-width" value="2">
                 </div>
                 <div class="plus-minus-btn">
                     <p> <span onclick="getTicketValue('economy', true)" class="economy-increase">+</span> <span
@@ -76,7 +76,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$500</p>
+                        <p id="subtotal">$500</p>
                     </div>
                 </div>
 
@@ -85,7 +85,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$50</p>
+                        <p id="tax">$50</p>
                     </div>
                 </div>
                 <hr>
@@ -94,7 +94,7 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$550</p>
+                        <p id="total-ticket-price">$550</p>
                     </div>
                 </div>
             </div>
